@@ -1,0 +1,3 @@
+com.akshay.harsoda.android.base.helper.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

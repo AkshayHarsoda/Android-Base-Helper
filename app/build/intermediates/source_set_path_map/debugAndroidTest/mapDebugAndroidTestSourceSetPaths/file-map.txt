@@ -1,0 +1,5 @@
+com.akshay.harsoda.android.base.helper.test.app-core-1.6.0-0 C:\Users\pc\.gradle\caches\transforms-4\69311ed5bbfb0ab14ab2ee803cf9ff92\transformed\core-1.6.0\res
+com.akshay.harsoda.android.base.helper.test.app-androidTest-1 E:\Akshay Data\My Home Work\Work Space\Application\Android Base Helper\AndroidBaseHelper\app\build\generated\res\resValues\androidTest\debug
+com.akshay.harsoda.android.base.helper.test.app-mergeDebugAndroidTestResources-2 E:\Akshay Data\My Home Work\Work Space\Application\Android Base Helper\AndroidBaseHelper\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.akshay.harsoda.android.base.helper.test.app-mergeDebugAndroidTestResources-3 E:\Akshay Data\My Home Work\Work Space\Application\Android Base Helper\AndroidBaseHelper\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.akshay.harsoda.android.base.helper.test.app-debugAndroidTest-4 E:\Akshay Data\My Home Work\Work Space\Application\Android Base Helper\AndroidBaseHelper\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

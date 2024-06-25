@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <attr format="enum" name="native_ad_type">
+        <enum name="banner" value="0"/>
+        <enum name="big" value="1"/>
+        <enum name="custom" value="2"/>
+    </attr>
+    <color name="black">#FF000000</color>
+    <color name="color_accent">#FF008F</color>
+    <color name="color_gray">#AAAAAA</color>
+    <color name="color_gray_bg">#33AAAAAA</color>
+    <color name="color_green">#66BB6A</color>
+    <color name="color_green_bg">#3366BB6A</color>
+    <color name="color_native_ad_tag_bg">#9628FE</color>
+    <color name="color_native_ad_tag_bg_50">#809628FE</color>
+    <color name="color_pink">#FF008F</color>
+    <color name="color_pink_bg">#33FF008F</color>
+    <color name="color_primary">#FF008F</color>
+    <color name="color_primary_dark">#FF008F</color>
+    <color name="color_red">#EF5350</color>
+    <color name="color_red_bg">#33EF5350</color>
+    <color name="white">#FFFFFFFF</color>
+    <item name="native_ad_media" type="id"/>
+    <string name="ad_attribution">Ad</string>
+    <string name="app_name">Android Base Helper</string>
+    <string name="test_admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="test_admob_banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="test_admob_interstitial_ad_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="test_admob_interstitial_ad_reward_id">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="test_admob_native_advanced_ad_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="test_admob_open_ad_id">ca-app-pub-3940256099942544/9257395921</string>
+    <string name="test_admob_reward_video_ad_id">ca-app-pub-3940256099942544/5224354917</string>
+    <style name="AlertDialogTheme" parent="android:Theme.Material.Light.Dialog.Alert">
+        <item name="android:buttonBarNegativeButtonStyle">@style/Theme.Custom_Dialog_Text</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/Theme.Custom_Dialog_Text</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/Theme.Custom_Dialog_Text</item>
+    </style>
+    <style name="Theme.AndroidBaseHelper" parent="Theme.Material3.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="colorControlActivated">@color/color_accent</item>
+
+        <item name="android:windowDisablePreview">true</item>
+
+        <item name="android:forceDarkAllowed" ns1:targetApi="q">false</item>
+        <item name="android:windowBackground">@color/white</item>
+
+        
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <item name="android:statusBarColor">@color/color_primary</item>
+
+        <item name="android:windowLightNavigationBar" ns1:targetApi="o_mr1">false</item>
+        
+        <item name="android:navigationBarColor">@color/color_primary</item>
+
+        
+        
+
+        <item name="android:timePickerDialogTheme">@style/AlertDialogTheme</item>
+        <item name="android:datePickerDialogTheme">@style/AlertDialogTheme</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="Theme.Custom_Dialog_Text" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="bottom_round_0" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">0%</item>
+        <item name="cornerSizeBottomRight">0%</item>
+    </style>
+    <style name="bottom_round_5" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">5%</item>
+        <item name="cornerSizeBottomRight">5%</item>
+    </style>
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+    <style name="full_cut_50" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="full_round" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="full_round_12" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12%</item>
+    </style>
+    <style name="full_round_20" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20%</item>
+    </style>
+    <style name="full_round_20_dp" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+    <style name="full_round_6" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">6%</item>
+    </style>
+    <style name="splash_screen_theme" parent="Theme.AndroidBaseHelper">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        
+        <item name="android:windowLayoutInDisplayCutoutMode" ns1:targetApi="o_mr1">shortEdges
+        </item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+    <declare-styleable name="NativeAdHelper">
+        <attr name="native_ad_type"/>
+
+        <attr format="reference" name="customLayout"/>
+
+        
+        <attr format="color" name="cardBackgroundColor"/>
+        
+        <attr format="dimension" name="cardCornerRadius"/>
+        
+        <attr format="dimension" name="cardElevation"/>
+        
+        <attr format="dimension" name="cardMaxElevation"/>
+        
+        <attr format="boolean" name="cardUseCompatPadding"/>
+        
+        <attr format="boolean" name="cardPreventCornerOverlap"/>
+        
+        <attr format="dimension" name="contentPadding"/>
+        
+        <attr format="dimension" name="contentPaddingLeft"/>
+        
+        <attr format="dimension" name="contentPaddingRight"/>
+        
+        <attr format="dimension" name="contentPaddingTop"/>
+        
+        <attr format="dimension" name="contentPaddingBottom"/>
+    </declare-styleable>
+</resources>

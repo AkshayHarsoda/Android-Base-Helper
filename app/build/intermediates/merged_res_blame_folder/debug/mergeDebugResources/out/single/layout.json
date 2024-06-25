@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.akshay.harsoda.android.base.helper.app-mergeDebugResources-41:/layout/activity_main.xml",
+        "source": "com.akshay.harsoda.android.base.helper.app-main-44:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.akshay.harsoda.android.base.helper.app-mergeDebugResources-41:/layout/native_ad_loading.xml",
+        "source": "com.akshay.harsoda.android.base.helper.app-main-44:/layout/native_ad_loading.xml"
+    },
+    {
+        "merged": "com.akshay.harsoda.android.base.helper.app-mergeDebugResources-41:/layout/native_ad_banner_type.xml",
+        "source": "com.akshay.harsoda.android.base.helper.app-main-44:/layout/native_ad_banner_type.xml"
+    },
+    {
+        "merged": "com.akshay.harsoda.android.base.helper.app-mergeDebugResources-41:/layout/activity_startup.xml",
+        "source": "com.akshay.harsoda.android.base.helper.app-main-44:/layout/activity_startup.xml"
+    },
+    {
+        "merged": "com.akshay.harsoda.android.base.helper.app-mergeDebugResources-41:/layout/native_ad_big_type.xml",
+        "source": "com.akshay.harsoda.android.base.helper.app-main-44:/layout/native_ad_big_type.xml"
+    },
+    {
+        "merged": "com.akshay.harsoda.android.base.helper.app-mergeDebugResources-41:/layout/layout_native_ad_main.xml",
+        "source": "com.akshay.harsoda.android.base.helper.app-main-44:/layout/layout_native_ad_main.xml"
+    }
+]

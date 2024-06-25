@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="color_accent">#FF008F</color>
+    <color name="color_primary">#FF008F</color>
+    <color name="color_primary_dark">#FF008F</color>
+
+    <color name="color_gray">#AAAAAA</color>
+    <color name="color_gray_bg">#33AAAAAA</color>
+
+    <color name="color_pink">#FF008F</color>
+    <color name="color_pink_bg">#33FF008F</color>
+    <color name="color_red">#EF5350</color>
+    <color name="color_red_bg">#33EF5350</color>
+    <color name="color_green">#66BB6A</color>
+    <color name="color_green_bg">#3366BB6A</color>
+
+    <color name="color_native_ad_tag_bg">#9628FE</color>
+    <color name="color_native_ad_tag_bg_50">#809628FE</color>
 </resources>

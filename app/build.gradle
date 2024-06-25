@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -15,11 +17,17 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        def appVersionName = "(${versionName})"
+        def appName = "${rootProject.name}-${appVersionName}"
+        archivesBaseName = "${appName}"
+        setProperty("archivesBaseName", "${appName}")
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -29,6 +37,15 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+    lint {
+        disable 'ContentDescription', 'HardcodedText', 'SetTextI18n', 'SimpleDateFormat'
     }
 }
 
@@ -42,4 +59,41 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.androidx.junit
     androidTestImplementation libs.androidx.espresso.core
+
+    //<editor-fold desc="Multidex support">
+    implementation "androidx.multidex:multidex:2.0.1"
+    //</editor-fold>
+
+    //<editor-fold desc="Browser & Custom Tabs">
+    implementation 'androidx.browser:browser:1.8.0'
+    //</editor-fold>
+
+    //<editor-fold desc="API Calling Using Retrofit">
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+//    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.6'
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
+    //</editor-fold>
+
+
+
+    //<editor-fold desc="For Google Gson To Json">
+    implementation 'com.google.code.gson:gson:2.10.1'
+    //</editor-fold>
+
+    //<editor-fold desc="LifeCycle">
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    //</editor-fold>
+
+    //<editor-fold desc="For Firebase">
+    implementation platform('com.google.firebase:firebase-bom:30.3.2')
+    implementation 'com.google.firebase:firebase-config-ktx'
+//    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+//    implementation 'com.google.firebase:firebase-analytics-ktx'
+    //</editor-fold>
+
+    implementation "com.google.android.gms:play-services-ads:23.0.0"
+
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
 }

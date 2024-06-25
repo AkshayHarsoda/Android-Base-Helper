@@ -1,9 +1,104 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.AndroidBaseHelper" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+
+
+    <style name="Theme.AndroidBaseHelper" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="colorControlActivated">@color/color_accent</item>
+
+        <item name="android:windowDisablePreview">true</item>
+
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowBackground">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:windowLightStatusBar">false</item>
+        <!--        <item name="android:enforceStatusBarContrast" tools:targetApi="q">true</item>-->
+        <item name="android:statusBarColor">@color/color_primary</item>
+
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <!--        <item name="android:enforceNavigationBarContrast" tools:targetApi="q">true</item>-->
+        <item name="android:navigationBarColor">@color/color_primary</item>
+
+        <!--        <item name="android:windowTranslucentStatus">true</item>-->
+        <!--        <item name="android:windowTranslucentNavigation">true</item>-->
+
+        <item name="android:timePickerDialogTheme">@style/AlertDialogTheme</item>
+        <item name="android:datePickerDialogTheme">@style/AlertDialogTheme</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="fontFamily">sans-serif</item>
     </style>
 
-    <style name="Theme.AndroidBaseHelper" parent="Base.Theme.AndroidBaseHelper" />
+    <style name="splash_screen_theme" parent="Theme.AndroidBaseHelper">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <!--        <item name="android:windowBackground">@drawable/bg_splash_screen</item>-->
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges
+        </item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="android:Theme.Material.Light.Dialog.Alert">
+        <item name="android:buttonBarNegativeButtonStyle">@style/Theme.Custom_Dialog_Text</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/Theme.Custom_Dialog_Text</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/Theme.Custom_Dialog_Text</item>
+    </style>
+
+    <style name="Theme.Custom_Dialog_Text" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="bottom_round_5" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">5%</item>
+        <item name="cornerSizeBottomRight">5%</item>
+    </style>
+
+    <style name="bottom_round_0" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">0%</item>
+        <item name="cornerSizeBottomRight">0%</item>
+    </style>
+
+    <style name="full_round" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="full_round_6" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">6%</item>
+    </style>
+
+    <style name="full_round_12" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12%</item>
+    </style>
+
+    <style name="full_round_20" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20%</item>
+    </style>
+
+    <style name="full_round_20_dp" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="full_cut_50" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
 </resources>
