@@ -45,6 +45,10 @@
         </activity>
 
         <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="594163995933675" />
+
+        <meta-data
             android:name="com.google.android.gms.ads.flag.NATIVE_AD_DEBUGGER_ENABLED"
             android:value="false" />
     </application>

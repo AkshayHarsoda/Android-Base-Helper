@@ -8,6 +8,10 @@ import android.text.SpannableStringBuilder
 import android.text.Spanned
 import android.text.style.ForegroundColorSpan
 import androidx.annotation.ColorInt
+import com.akshay.harsoda.android.base.helper.ads.facebook.FacebookInterstitialAdModel
+
+internal var isEnableFacebookAds: Boolean = false
+internal var facebook_interstitial_ad_model_list: ArrayList<FacebookInterstitialAdModel> = ArrayList()
 
 private var mAlertDialog: AlertDialog? = null
 
